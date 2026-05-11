@@ -3,37 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fast Commercial Plumbing | Tulsa, OK</title>
+
+<title>Fast Commercial Plumbing | Plumber in Tulsa OK</title>
+<meta name="description" content="Fast Commercial Plumbing in Tulsa, OK offers same-day plumbing, emergency repairs, water heater service, and sewer line repair. Call now for fast service.">
 
 <style>
-body { margin:0; font-family:Arial; color:#222; line-height:1.6; }
+:root {
+  --primary:#0a3d62;
+  --accent:#ff6b00;
+}
+
+body {
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  color:#222;
+}
 
 /* NAV */
 nav {
   display:flex;
   justify-content:space-between;
-  padding:20px;
+  padding:20px 40px;
   background:white;
   position:sticky;
   top:0;
-  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+  box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
-.phone { color:#ff6b00; font-weight:bold; }
 
 /* HERO */
 .hero {
-  background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
-  url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+  background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+  url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover;
   color:white;
   padding:120px 20px;
   text-align:center;
 }
-.hero h1 { font-size:50px; margin-bottom:10px; }
+
+.hero h1 { font-size:50px; }
 .hero p { font-size:20px; }
+
+.btn {
+  background:var(--accent);
+  color:white;
+  padding:15px 25px;
+  display:inline-block;
+  margin-top:20px;
+  text-decoration:none;
+  border-radius:5px;
+}
 
 /* SECTION */
 .section {
-  padding:70px 20px;
+  padding:80px 20px;
   max-width:1200px;
   margin:auto;
 }
@@ -45,6 +66,7 @@ nav {
   gap:25px;
 }
 
+/* CARD */
 .card {
   background:#f5f5f5;
   padding:25px;
@@ -53,43 +75,39 @@ nav {
 
 /* REVIEWS */
 .review {
-  background:#fff;
+  background:white;
   padding:25px;
   border-radius:10px;
-  box-shadow:0 3px 12px rgba(0,0,0,0.1);
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
-.stars { color:#f5a623; margin-bottom:10px; }
-.name { font-weight:bold; margin-top:10px; }
+.stars { color:#f5a623; }
+
+/* TEAM */
+.team {
+  text-align:center;
+}
 
 /* CTA */
 .cta {
-  background:#0a3d62;
+  background:var(--primary);
   color:white;
   text-align:center;
   padding:70px 20px;
 }
-.btn {
-  background:#ff6b00;
-  color:white;
-  padding:15px 25px;
-  text-decoration:none;
-  display:inline-block;
-  margin-top:15px;
+
+/* MAP */
+iframe {
+  width:100%;
+  height:400px;
+  border:0;
 }
 
-/* DARK STRIP */
-.dark {
+/* FOOTER */
+footer {
   background:#111;
   color:white;
   text-align:center;
-  padding:60px 20px;
-}
-
-footer {
-  background:#0a3d62;
-  color:white;
-  text-align:center;
-  padding:25px;
+  padding:30px;
 }
 </style>
 </head>
@@ -98,27 +116,13 @@ footer {
 
 <nav>
   <strong>Fast Commercial Plumbing</strong>
-  <div class="phone">(918) 555-1234</div>
+  <strong>(539) 666-7822</strong>
 </nav>
 
 <section class="hero">
-  <h1>Tulsa’s Most Trusted Plumbing Team</h1>
-  <p>4.8⭐ Rated • 90+ Reviews • Same-Day Service</p>
-  <a href="tel:9185551234" class="btn">Call Now</a>
-</section>
-
-<section class="dark">
-  <h2>✔ Same-Day Service ✔ Honest Pricing ✔ Trusted Technicians</h2>
-</section>
-
-<section class="section">
-  <h2>Why People Choose Us</h2>
-  <div class="grid">
-    <div class="card">⚡ Fast response—even nights & weekends</div>
-    <div class="card">💲 Clear, upfront pricing</div>
-    <div class="card">🔧 Fixes other plumbers couldn’t</div>
-    <div class="card">💬 Friendly, professional technicians</div>
-  </div>
+  <h1>Fast & Reliable Plumbing in Tulsa</h1>
+  <p>4.8⭐ Rated • 90+ Reviews • Open 24 Hours</p>
+  <a href="tel:15396667822" class="btn">Call (539) 666-7822</a>
 </section>
 
 <section class="section">
@@ -126,48 +130,56 @@ footer {
   <div class="grid">
     <div class="card">Water Heater Repair & Installation</div>
     <div class="card">Sewer Line Repair & Replacement</div>
-    <div class="card">Drain Cleaning & Clog Removal</div>
-    <div class="card">Leak Detection & Slab Leak Repair</div>
+    <div class="card">Drain Cleaning</div>
+    <div class="card">Leak Detection</div>
     <div class="card">Emergency Plumbing</div>
     <div class="card">Toilets, Faucets & Fixtures</div>
   </div>
 </section>
 
 <section class="section">
-  <h2>What Customers Are Saying</h2>
+  <h2>Meet Our Team</h2>
+  <div class="grid team">
+    <div class="card">Curtis – Plumbing Specialist</div>
+    <div class="card">Blake – Service Technician</div>
+    <div class="card">Jerome – Sewer & Drain Expert</div>
+    <div class="card">Walter – Senior Plumber</div>
+    <div class="card">Frank – Installation Specialist</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Real Customer Reviews</h2>
   <div class="grid">
 
-    <!-- MANY REVIEWS -->
-    <div class="review"><div class="stars">★★★★★</div><p>"They showed up the same day and fixed our water heater fast. Super professional."</p><div class="name">— Nancy Mullen</div></div>
-    <div class="review"><div class="stars">★★★★★</div><p>"Fair pricing and great communication. Highly recommend."</p><div class="name">— Zachary Baker</div></div>
-    <div class="review"><div class="stars">★★★★★</div><p>"Handled a major sewer repair other companies refused."</p><div class="name">— Dana O’Neal</div></div>
-    <div class="review"><div class="stars">★★★★★</div><p>"Came out late at night for a burst pipe. Lifesavers."</p><div class="name">— S. Floyd</div></div>
-    <div class="review"><div class="stars">★★★★★</div><p>"Kitchen sink clog fixed before holiday weekend."</p><div class="name">— Tanner Curry</div></div>
-    <div class="review"><div class="stars">★★★★★</div><p>"Always on time and very professional."</p><div class="name">— L. Newman</div></div>
-    <div class="review"><div class="stars">★★★★★</div><p>"Quick scheduling and perfect repair."</p><div class="name">— Desiree Payne</div></div>
-    <div class="review"><div class="stars">★★★★★</div><p>"Septic issue handled same night."</p><div class="name">— S. Hatfield</div></div>
-
-    <!-- ADD EVEN MORE -->
-    <div class="review"><div class="stars">★★★★★</div><p>"They explained everything clearly and didn’t upsell."</p><div class="name">— Thomas Carson</div></div>
-    <div class="review"><div class="stars">★★★★★</div><p>"Best plumbing service I’ve used in Tulsa."</p><div class="name">— Mario Jenkins</div></div>
-    <div class="review"><div class="stars">★★★★★</div><p>"Very fast response and great work quality."</p><div class="name">— Avery Woodward</div></div>
-    <div class="review"><div class="stars">★★★★★</div><p>"Solved a complicated drainage issue."</p><div class="name">— Caitlyn M</div></div>
-    <div class="review"><div class="stars">★★★★★</div><p>"Professional, clean, and efficient."</p><div class="name">— Taylor Bass</div></div>
-    <div class="review"><div class="stars">★★★★★</div><p>"Highly recommend for emergency plumbing."</p><div class="name">— Julian Brandt</div></div>
+    <div class="review"><div class="stars">★★★★★</div>"Same-day service and very professional." — Nancy Mullen</div>
+    <div class="review"><div class="stars">★★★★★</div>"Fair pricing and fast response." — Zachary Baker</div>
+    <div class="review"><div class="stars">★★★★★</div>"Handled a tough sewer repair." — Dana O’Neal</div>
+    <div class="review"><div class="stars">★★★★★</div>"Came out late at night." — S Floyd</div>
+    <div class="review"><div class="stars">★★★★★</div>"Clear communication and great work." — L Newman</div>
+    <div class="review"><div class="stars">★★★★★</div>"Highly recommend." — Mario Jenkins</div>
+    <div class="review"><div class="stars">★★★★★</div>"Very reliable and quick." — Avery Woodward</div>
+    <div class="review"><div class="stars">★★★★★</div>"Solved everything fast." — Caitlyn M</div>
 
   </div>
 </section>
 
+<section class="section">
+  <h2>Our Location</h2>
+  <iframe src="https://www.google.com/maps?q=4304+S+Mingo+Rd+Tulsa+OK&output=embed"></iframe>
+</section>
+
 <section class="cta">
   <h2>Need a Plumber Right Now?</h2>
-  <p>Call Fast Commercial Plumbing for same-day service.</p>
-  <a href="tel:9185551234" class="btn">(918) 555-1234</a>
+  <p>Open 24 hours — call anytime for fast service.</p>
+  <a href="tel:15396667822" class="btn">(539) 666-7822</a>
 </section>
 
 <footer>
-  <p>Fast Commercial Plumbing • Tulsa, OK • (918) 555-1234</p>
+  <p>Fast Commercial Plumbing</p>
+  <p>4304 S Mingo Rd #9850, Tulsa, OK 74146</p>
+  <p>Open 24 Hours • (539) 666-7822</p>
 </footer>
 
 </body>
 </html>
-
