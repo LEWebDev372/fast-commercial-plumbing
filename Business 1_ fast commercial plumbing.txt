@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fast Commercial Plumbing | Tulsa Emergency Plumber</title>
+
+<style>
+body {
+margin: 0;
+font-family: 'Segoe UI', sans-serif;
+color: #222;
+}
+
+/* NAV */
+nav {
+position: sticky;
+top: 0;
+background: white;
+padding: 15px 20px;
+display: flex;
+justify-content: space-between;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+z-index: 1000;
+}
+
+.call-btn {
+background: #ff6b00;
+color: white;
+padding: 10px 18px;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+}
+
+/* HERO */
+.hero {
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+color: white;
+padding: 100px 20px;
+text-align: center;
+}
+
+.hero h1 {
+font-size: 42px;
+}
+
+.hero p {
+font-size: 18px;
+margin: 15px 0;
+}
+
+/* BUTTON */
+.btn {
+background: #ff6b00;
+color: white;
+padding: 15px 25px;
+text-decoration: none;
+border-radius: 5px;
+display: inline-block;
+margin-top: 10px;
+}
+
+/* SECTIONS */
+.section {
+padding: 60px 20px;
+max-width: 1100px;
+margin: auto;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+gap: 20px;
+}
+
+.card {
+background: #f5f5f5;
+padding: 20px;
+border-radius: 10px;
+}
+
+/* TRUST BAR */
+.trust {
+background: #0a3d62;
+color: white;
+text-align: center;
+padding: 20px;
+}
+
+/* FORM */
+form {
+background: #f9f9f9;
+padding: 25px;
+border-radius: 10px;
+}
+
+input, select {
+width: 100%;
+padding: 12px;
+margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+background: #0a3d62;
+color: white;
+text-align: center;
+padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<strong>Fast Commercial Plumbing</strong>
+<a href="tel:1234567890" class="call-btn">📞 Call Now</a>
+</nav>
+
+<section class="hero">
+<h1>Fast, Reliable Plumbing — Same Day Service</h1>
+<p>4.8⭐ Rated • 90+ Reviews • Emergency Plumbing Available</p>
+<a href="#form" class="btn">Get Help Now</a>
+</section>
+
+<div class="trust">
+✔ Same-Day Service &nbsp;&nbsp; ✔ Honest Pricing &nbsp;&nbsp; ✔ Licensed Pros
+</div>
+
+<section class="section">
+<h2>Why Homeowners Trust Us</h2>
+<div class="grid">
+<div class="card">⚡ Arrive fast—even nights & weekends</div>
+<div class="card">💬 Clear communication, no confusion</div>
+<div class="card">💲 Fair, upfront pricing</div>
+<div class="card">🔧 Fix problems other plumbers can't</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card"><h3>Water Heaters</h3><p>Repair & install tank and tankless systems.</p></div>
+<div class="card"><h3>Sewer Lines</h3><p>Repairs, replacements & tough root issues.</p></div>
+<div class="card"><h3>Drain Cleaning</h3><p>Clear stubborn clogs fast.</p></div>
+<div class="card"><h3>Leak Repairs</h3><p>Fix hidden leaks & slab issues.</p></div>
+<div class="card"><h3>Emergency Plumbing</h3><p>Available when you need help most.</p></div>
+<div class="card"><h3>General Repairs</h3><p>Toilets, sinks, faucets & more.</p></div>
+</div>
+</section>
+
+<section class="section">
+<h2>Real Customer Experiences</h2>
+
+<p>⭐⭐⭐⭐⭐ “They showed up the same night when our pipe burst. Super honest and fast.”</p>
+<p>⭐⭐⭐⭐⭐ “Fixed a sewer issue other companies wouldn’t touch.”</p>
+<p>⭐⭐⭐⭐⭐ “Clear explanations, fair pricing, and great service.”</p>
+
+</section>
+
+<section class="section" id="form">
+<h2>Request Service Now</h2>
+
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="tel" placeholder="Phone Number" required>
+
+<select>
+<option>Select Service</option>
+<option>Water Heater</option>
+<option>Drain Cleaning</option>
+<option>Sewer Repair</option>
+<option>Leak Repair</option>
+<option>Emergency</option>
+</select>
+
+<button class="btn">Get a Call Back</button>
+</form>
+</section>
+
+<section class="section">
+<h2>Need Help Fast?</h2>
+<p>Call now and get a plumber out today.</p>
+<a href="tel:1234567890" class="btn">📞 Call Now</a>
+</section>
+
+<footer>
+<p>© 2026 Fast Commercial Plumbing • Tulsa, OK</p>
+</footer>
+
+</body>
+</html>
