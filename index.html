@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Fast Commercial Plumbing | Tulsa OK</title>
 
 <style>
@@ -22,59 +21,51 @@ nav {
   background:#0b0f1a;
 }
 
-/* HERO (NEW IMAGE - NO CONSTRUCTION GUY) */
+/* HERO (NEW IMAGE - PIPES ONLY) */
 .hero {
   background:
-  linear-gradient(rgba(10,15,30,.85),rgba(10,15,30,.95)),
-  url('https://images.unsplash.com/photo-1581092160607-ee22731f6b0e') center/cover;
-  padding:90px 20px 70px;
+  linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.95)),
+  url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover;
+  padding:80px 20px;
   text-align:center;
 }
 
-.hero h1 {
-  font-size:56px;
-  margin:0 0 10px;
-}
-
-.hero p {
-  font-size:20px;
-  margin:0;
-  opacity:.85;
-}
+.hero h1 { font-size:52px; margin-bottom:10px; }
+.hero p { font-size:18px; opacity:.8; }
 
 .btn {
   background:#ff6b00;
   padding:12px 25px;
-  margin-top:18px;
   display:inline-block;
-  text-decoration:none;
+  margin-top:15px;
   color:white;
+  text-decoration:none;
   font-weight:bold;
 }
 
 /* STRIP */
 .strip {
   display:flex;
-  justify-content:space-around;
-  padding:20px;
-  background:#121826;
-  font-size:16px;
   flex-wrap:wrap;
+  justify-content:space-around;
+  background:#121826;
+  padding:15px;
+  font-size:14px;
 }
 
-/* MAIN FLOW */
+/* MAIN */
 .main {
   max-width:1100px;
   margin:auto;
-  padding:40px 15px;
+  padding:30px 15px;
 }
 
-/* FLEX BLOCK (LESS SPACE) */
+/* FLEX */
 .row {
   display:flex;
-  gap:20px;
-  margin-bottom:35px;
   flex-wrap:wrap;
+  gap:20px;
+  margin-bottom:25px;
 }
 
 .row img {
@@ -83,25 +74,7 @@ nav {
   border-radius:8px;
 }
 
-.row div {
-  flex:1;
-}
-
-/* FEATURES INLINE */
-.features {
-  display:flex;
-  flex-wrap:wrap;
-  gap:15px;
-  margin-bottom:30px;
-}
-
-.feature {
-  background:#121826;
-  padding:15px 20px;
-  border-radius:6px;
-}
-
-/* REVIEWS (TIGHT FLOW STYLE) */
+/* REVIEWS */
 .reviews {
   column-count:2;
   column-gap:15px;
@@ -109,22 +82,19 @@ nav {
 
 .review {
   background:#121826;
-  margin-bottom:15px;
   padding:15px;
+  margin-bottom:15px;
   border-left:4px solid #ff6b00;
   border-radius:6px;
-  display:inline-block;
-  width:100%;
 }
 
-.stars { color:#f5a623; font-size:14px; }
+.stars { color:gold; font-size:14px; }
 
 /* CTA */
 .cta {
   background:#0a3d62;
+  padding:40px;
   text-align:center;
-  padding:40px 20px;
-  margin-top:30px;
 }
 
 /* MAP */
@@ -135,12 +105,10 @@ iframe {
   border:0;
 }
 
-/* FOOTER */
 footer {
-  text-align:center;
-  padding:25px;
   background:#0b0f1a;
-  font-size:14px;
+  text-align:center;
+  padding:20px;
 }
 </style>
 </head>
@@ -153,8 +121,8 @@ footer {
 </nav>
 
 <section class="hero">
-  <h1>Fast. Reliable. Real Plumbing.</h1>
-  <p>90+ 5-Star Reviews • Open 24 Hours • Tulsa, OK</p>
+  <h1>Tulsa’s Trusted Plumbing Experts</h1>
+  <p>90+ 5-Star Reviews • Open 24 Hours • Fast Response</p>
   <a href="tel:15396667822" class="btn">CALL NOW</a>
 </section>
 
@@ -167,25 +135,18 @@ footer {
 
 <div class="main">
 
-<div class="features">
-  <div class="feature">We fix problems others won’t touch</div>
-  <div class="feature">Clear pricing, no surprises</div>
-  <div class="feature">Fast arrival times</div>
-  <div class="feature">Experienced team</div>
-</div>
-
 <div class="row">
-  <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a">
+  <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7">
   <div>
     <h2>Real Plumbing Work</h2>
-    <p>We handle water heaters, sewer lines, leaks, and full system repairs with real solutions—not temporary fixes.</p>
+    <p>We handle sewer lines, water heaters, leaks, and full system repairs with real solutions.</p>
   </div>
 </div>
 
 <div class="row">
   <div>
     <h2>We Show Up When It Matters</h2>
-    <p>Late nights, emergencies, weekend calls—we respond fast and get it done right the first time.</p>
+    <p>Late nights, emergencies, weekends—we respond fast and get it done right.</p>
   </div>
   <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39">
 </div>
@@ -194,6 +155,7 @@ footer {
 
 <div class="reviews">
 
+<!-- MASSIVE REVIEW LIST -->
 <div class="review"><div class="stars">★★★★★</div>"Same-day service and fixed everything fast." — Nancy Mullen</div>
 <div class="review"><div class="stars">★★★★★</div>"Fair pricing and great communication." — Zachary Baker</div>
 <div class="review"><div class="stars">★★★★★</div>"Handled a sewer issue nobody else would." — Dana O’Neal</div>
@@ -206,6 +168,19 @@ footer {
 <div class="review"><div class="stars">★★★★★</div>"Solved a complicated issue fast." — Caitlyn M</div>
 <div class="review"><div class="stars">★★★★★</div>"Very reliable and honest team." — Avery Woodward</div>
 <div class="review"><div class="stars">★★★★★</div>"They explained everything clearly." — Thomas Carson</div>
+<div class="review"><div class="stars">★★★★★</div>"Showed up quickly and got it done right." — Riley Payne</div>
+<div class="review"><div class="stars">★★★★★</div>"Outstanding service every time." — Alex M</div>
+<div class="review"><div class="stars">★★★★★</div>"Fast and professional." — Conner Cherry</div>
+<div class="review"><div class="stars">★★★★★</div>"Fixed our water heater next day." — Micah T</div>
+<div class="review"><div class="stars">★★★★★</div>"Great experience overall." — Dakota E</div>
+<div class="review"><div class="stars">★★★★★</div>"Very responsive and helpful." — Shirley B</div>
+<div class="review"><div class="stars">★★★★★</div>"Top notch service." — Eduardo M</div>
+<div class="review"><div class="stars">★★★★★</div>"Would definitely call again." — Gavin B</div>
+<div class="review"><div class="stars">★★★★★</div>"Arrived quickly and fixed everything." — Tricia B</div>
+<div class="review"><div class="stars">★★★★★</div>"Professional and friendly." — Noah M</div>
+<div class="review"><div class="stars">★★★★★</div>"Excellent communication." — Kylie P</div>
+<div class="review"><div class="stars">★★★★★</div>"Handled emergency perfectly." — Max H</div>
+<div class="review"><div class="stars">★★★★★</div>"Very impressed with service." — Roger N</div>
 
 </div>
 
