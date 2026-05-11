@@ -18,12 +18,12 @@ nav {
   color:white;
 }
 
-/* HERO (UPGRADED LOOK) */
+/* HERO */
 .hero {
   height:100vh;
   background:
-  linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
-  url('https://images.unsplash.com/photo-1621905251918-48416bd8575a') center/cover;
+  linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.9)),
+  url('https://images.unsplash.com/photo-1607472586893-edb57bdc0e39') center/cover;
   color:white;
   display:flex;
   flex-direction:column;
@@ -32,15 +32,8 @@ nav {
   text-align:center;
 }
 
-.hero h1 {
-  font-size:65px;
-  max-width:900px;
-}
-
-.hero p {
-  font-size:22px;
-  opacity:.9;
-}
+.hero h1 { font-size:60px; max-width:900px; }
+.hero p { font-size:22px; }
 
 .btn {
   background:#ff6b00;
@@ -49,13 +42,6 @@ nav {
   margin-top:20px;
   text-decoration:none;
   font-weight:bold;
-}
-
-/* SECTION */
-.section {
-  padding:100px 20px;
-  max-width:1200px;
-  margin:auto;
 }
 
 /* STRIP */
@@ -67,7 +53,7 @@ nav {
   font-size:22px;
 }
 
-/* SPLIT (NO BOXES) */
+/* SPLIT SECTIONS */
 .split {
   display:flex;
   flex-wrap:wrap;
@@ -85,23 +71,28 @@ nav {
   object-fit:cover;
 }
 
-/* REVIEWS */
+/* REVIEW FLOW (NO BORING BOX GRID) */
 .reviews {
-  column-count:3;
-  column-gap:20px;
+  padding:80px 20px;
+  max-width:1000px;
+  margin:auto;
 }
 
 .review {
-  background:white;
-  margin-bottom:20px;
-  padding:20px;
-  border-radius:10px;
-  box-shadow:0 5px 20px rgba(0,0,0,0.1);
-  display:inline-block;
-  width:100%;
+  margin-bottom:40px;
+  border-left:5px solid #ff6b00;
+  padding-left:20px;
 }
 
-.stars { color:gold; }
+.stars {
+  color:gold;
+  font-size:18px;
+}
+
+.name {
+  font-weight:bold;
+  margin-top:10px;
+}
 
 /* CTA */
 .cta {
@@ -146,53 +137,113 @@ footer {
 
 <section class="split">
   <div>
-    <h2>We Handle Jobs Others Won’t</h2>
-    <p>From sewer line failures to slab leaks and emergency repairs, our team is known for solving the toughest plumbing problems in Tulsa.</p>
+    <h2>Real Plumbing. Real Results.</h2>
+    <p>From clogged drains to full sewer replacements, we handle real problems with real solutions.</p>
   </div>
   <div>
-    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12">
+    <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7">
   </div>
 </section>
 
 <section class="split">
   <div>
-    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+    <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a">
   </div>
   <div>
-    <h2>Fast Response. Real Results.</h2>
-    <p>Whether it’s a burst pipe at night or a clogged drain before a holiday, we show up when others don’t.</p>
+    <h2>We Show Up When Others Don’t</h2>
+    <p>Late nights, emergencies, weekends—we’re the team Tulsa calls when it matters most.</p>
   </div>
 </section>
 
-<section class="section">
-  <h2>Real Customer Reviews</h2>
+<section class="reviews">
 
-  <div class="reviews">
+<h2>Real Customer Reviews</h2>
 
-    <div class="review"><div class="stars">★★★★★</div>"Same-day service and fixed everything fast." — Nancy Mullen</div>
-    <div class="review"><div class="stars">★★★★★</div>"Fair pricing and great communication." — Zachary Baker</div>
-    <div class="review"><div class="stars">★★★★★</div>"Handled a sewer issue nobody else would." — Dana O’Neal</div>
-    <div class="review"><div class="stars">★★★★★</div>"Came out late at night. Lifesavers." — S Floyd</div>
-    <div class="review"><div class="stars">★★★★★</div>"Kitchen clog fixed before holiday." — Tanner Curry</div>
-    <div class="review"><div class="stars">★★★★★</div>"Always professional and on time." — L Newman</div>
-    <div class="review"><div class="stars">★★★★★</div>"Quick repair and great service." — Desiree Payne</div>
-    <div class="review"><div class="stars">★★★★★</div>"Septic issue handled same night." — S Hatfield</div>
-    <div class="review"><div class="stars">★★★★★</div>"Best plumbing company I’ve used." — Mario Jenkins</div>
-    <div class="review"><div class="stars">★★★★★</div>"Solved a complicated issue fast." — Caitlyn M</div>
-    <div class="review"><div class="stars">★★★★★</div>"Highly recommend for emergencies." — Julian Brandt</div>
-    <div class="review"><div class="stars">★★★★★</div>"Very reliable and honest team." — Avery Woodward</div>
+<div class="review">
+<div class="stars">★★★★★</div>
+"Same-day service and fixed everything fast. Super professional."
+<div class="name">— Nancy Mullen</div>
+</div>
 
+<div class="review">
+<div class="stars">★★★★★</div>
+"Fair pricing and great communication. Highly recommend."
+<div class="name">— Zachary Baker</div>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+"Handled a sewer issue nobody else would touch."
+<div class="name">— Dana O’Neal</div>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+"Came out late at night and saved us."
+<div class="name">— S Floyd</div>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+"Kitchen sink clog fixed before the holiday."
+<div class="name">— Tanner Curry</div>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+"Always on time and very professional."
+<div class="name">— L Newman</div>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+"Quick scheduling and perfect repair."
+<div class="name">— Desiree Payne</div>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+"Septic overflow handled same night."
+<div class="name">— S Hatfield</div>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+"Best plumbing service I’ve used in Tulsa."
+<div class="name">— Mario Jenkins</div>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+"Solved a complicated drainage issue."
+<div class="name">— Caitlyn M</div>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+"Very reliable and honest team."
+<div class="name">— Avery Woodward</div>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+"They explained everything clearly and didn’t upsell."
+<div class="name">— Thomas Carson</div>
+</div>
+
+</section>
+
+<section class="split">
+  <div>
+    <h2>Serving Tulsa & Surrounding Areas</h2>
+    <p>Tulsa, Broken Arrow, Bixby, Owasso, and nearby communities.</p>
   </div>
-
+  <div>
+    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+  </div>
 </section>
 
-<section class="section">
-  <h2>Service Area</h2>
-  <p>Tulsa, Broken Arrow, Bixby, Owasso, and surrounding areas.</p>
-</section>
-
-<section class="section">
-  <h2>Our Location</h2>
+<section>
   <iframe src="https://www.google.com/maps?q=4304+S+Mingo+Rd+Tulsa+OK&output=embed"></iframe>
 </section>
 
