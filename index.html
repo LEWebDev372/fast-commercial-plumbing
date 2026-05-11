@@ -9,7 +9,7 @@
 <style>
 body {
   margin:0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family:'Segoe UI',sans-serif;
   background:#0c0f17;
   color:white;
 }
@@ -18,137 +18,129 @@ body {
 nav {
   display:flex;
   justify-content:space-between;
-  padding:20px 40px;
-  background:rgba(0,0,0,0.8);
-  position:sticky;
-  top:0;
-  backdrop-filter: blur(10px);
+  padding:15px 30px;
+  background:#0b0f1a;
 }
 
-/* HERO */
+/* HERO (NEW IMAGE - NO CONSTRUCTION GUY) */
 .hero {
-  height:100vh;
   background:
-  radial-gradient(circle at center, rgba(255,107,0,0.2), transparent 60%),
-  url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7') center/cover;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+  linear-gradient(rgba(10,15,30,.85),rgba(10,15,30,.95)),
+  url('https://images.unsplash.com/photo-1581092160607-ee22731f6b0e') center/cover;
+  padding:90px 20px 70px;
   text-align:center;
 }
 
 .hero h1 {
-  font-size:72px;
-  max-width:900px;
+  font-size:56px;
+  margin:0 0 10px;
 }
 
 .hero p {
-  font-size:22px;
-  opacity:.8;
+  font-size:20px;
+  margin:0;
+  opacity:.85;
 }
 
 .btn {
   background:#ff6b00;
-  padding:15px 30px;
-  margin-top:20px;
+  padding:12px 25px;
+  margin-top:18px;
+  display:inline-block;
   text-decoration:none;
   color:white;
   font-weight:bold;
-  border-radius:6px;
-  transition:.3s;
 }
 
-.btn:hover {
-  transform:translateY(-4px);
-}
-
-/* FLOW SECTION */
-.flow {
-  padding:120px 20px;
-  max-width:1200px;
-  margin:auto;
-}
-
-.flow h2 {
-  font-size:40px;
-  margin-bottom:40px;
-}
-
-/* ZIG ZAG */
-.zig {
-  display:flex;
-  flex-wrap:wrap;
-  margin-bottom:80px;
-}
-
-.zig div {
-  flex:1;
-  min-width:300px;
-  padding:40px;
-}
-
-.zig img {
-  width:100%;
-  border-radius:10px;
-}
-
-/* FEATURE STRIP */
-.feature-strip {
+/* STRIP */
+.strip {
   display:flex;
   justify-content:space-around;
-  padding:60px 20px;
+  padding:20px;
   background:#121826;
+  font-size:16px;
   flex-wrap:wrap;
-  text-align:center;
 }
 
-.feature-strip div {
-  margin:10px 20px;
+/* MAIN FLOW */
+.main {
+  max-width:1100px;
+  margin:auto;
+  padding:40px 15px;
 }
 
-/* REVIEWS (CREATIVE) */
-.review-wall {
-  padding:120px 20px;
-  background:#0c0f17;
+/* FLEX BLOCK (LESS SPACE) */
+.row {
+  display:flex;
+  gap:20px;
+  margin-bottom:35px;
+  flex-wrap:wrap;
 }
 
-.review-columns {
-  column-count:3;
-  column-gap:25px;
+.row img {
+  width:100%;
+  max-width:400px;
+  border-radius:8px;
+}
+
+.row div {
+  flex:1;
+}
+
+/* FEATURES INLINE */
+.features {
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-bottom:30px;
+}
+
+.feature {
+  background:#121826;
+  padding:15px 20px;
+  border-radius:6px;
+}
+
+/* REVIEWS (TIGHT FLOW STYLE) */
+.reviews {
+  column-count:2;
+  column-gap:15px;
 }
 
 .review {
   background:#121826;
-  padding:20px;
-  margin-bottom:20px;
-  border-radius:10px;
+  margin-bottom:15px;
+  padding:15px;
+  border-left:4px solid #ff6b00;
+  border-radius:6px;
   display:inline-block;
   width:100%;
-  border-left:4px solid #ff6b00;
 }
 
-.stars { color:#f5a623; }
+.stars { color:#f5a623; font-size:14px; }
 
 /* CTA */
 .cta {
-  padding:120px 20px;
+  background:#0a3d62;
   text-align:center;
-  background:linear-gradient(135deg,#0a3d62,#ff6b00);
+  padding:40px 20px;
+  margin-top:30px;
 }
 
 /* MAP */
 iframe {
   width:100%;
-  height:400px;
+  height:300px;
+  margin-top:20px;
   border:0;
 }
 
 /* FOOTER */
 footer {
   text-align:center;
-  padding:40px;
-  background:black;
+  padding:25px;
+  background:#0b0f1a;
+  font-size:14px;
 }
 </style>
 </head>
@@ -161,80 +153,74 @@ footer {
 </nav>
 
 <section class="hero">
-  <h1>Serious Plumbing. Done Right.</h1>
+  <h1>Fast. Reliable. Real Plumbing.</h1>
   <p>90+ 5-Star Reviews • Open 24 Hours • Tulsa, OK</p>
   <a href="tel:15396667822" class="btn">CALL NOW</a>
 </section>
 
-<div class="feature-strip">
-  <div>⚡ Same-Day Service</div>
-  <div>🔧 Sewer & Drain Experts</div>
+<div class="strip">
+  <div>⚡ Same-Day</div>
+  <div>🔧 Sewer Experts</div>
   <div>💲 Honest Pricing</div>
-  <div>📞 24/7 Emergency</div>
+  <div>📞 24/7</div>
 </div>
 
-<section class="flow">
+<div class="main">
 
-<h2>We Handle The Jobs Others Walk Away From</h2>
-
-<div class="zig">
-  <div>
-    <p>From collapsed sewer lines to major leaks, our team is known across Tulsa for solving real plumbing problems—not temporary fixes.</p>
-  </div>
-  <div>
-    <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a">
-  </div>
+<div class="features">
+  <div class="feature">We fix problems others won’t touch</div>
+  <div class="feature">Clear pricing, no surprises</div>
+  <div class="feature">Fast arrival times</div>
+  <div class="feature">Experienced team</div>
 </div>
 
-<div class="zig">
+<div class="row">
+  <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a">
   <div>
-    <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39">
-  </div>
-  <div>
-    <p>We show up fast, diagnose the issue clearly, and get it fixed without wasting your time.</p>
+    <h2>Real Plumbing Work</h2>
+    <p>We handle water heaters, sewer lines, leaks, and full system repairs with real solutions—not temporary fixes.</p>
   </div>
 </div>
 
-</section>
+<div class="row">
+  <div>
+    <h2>We Show Up When It Matters</h2>
+    <p>Late nights, emergencies, weekend calls—we respond fast and get it done right the first time.</p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39">
+</div>
 
-<section class="review-wall">
+<h2>Customer Reviews</h2>
 
-<h2 style="text-align:center;">What Customers Are Saying</h2>
-
-<div class="review-columns">
+<div class="reviews">
 
 <div class="review"><div class="stars">★★★★★</div>"Same-day service and fixed everything fast." — Nancy Mullen</div>
 <div class="review"><div class="stars">★★★★★</div>"Fair pricing and great communication." — Zachary Baker</div>
 <div class="review"><div class="stars">★★★★★</div>"Handled a sewer issue nobody else would." — Dana O’Neal</div>
-<div class="review"><div class="stars">★★★★★</div>"Came out late at night. Lifesavers." — S Floyd</div>
+<div class="review"><div class="stars">★★★★★</div>"Came out late at night." — S Floyd</div>
 <div class="review"><div class="stars">★★★★★</div>"Kitchen clog fixed before holiday." — Tanner Curry</div>
 <div class="review"><div class="stars">★★★★★</div>"Always professional and on time." — L Newman</div>
-<div class="review"><div class="stars">★★★★★</div>"Quick repair and great service." — Desiree Payne</div>
+<div class="review"><div class="stars">★★★★★</div>"Quick repair and excellent service." — Desiree Payne</div>
 <div class="review"><div class="stars">★★★★★</div>"Septic issue handled same night." — S Hatfield</div>
 <div class="review"><div class="stars">★★★★★</div>"Best plumbing company in Tulsa." — Mario Jenkins</div>
 <div class="review"><div class="stars">★★★★★</div>"Solved a complicated issue fast." — Caitlyn M</div>
 <div class="review"><div class="stars">★★★★★</div>"Very reliable and honest team." — Avery Woodward</div>
 <div class="review"><div class="stars">★★★★★</div>"They explained everything clearly." — Thomas Carson</div>
-<div class="review"><div class="stars">★★★★★</div>"Showed up quickly and got it done right." — Riley Payne</div>
-<div class="review"><div class="stars">★★★★★</div>"Outstanding service every time." — Alex M</div>
 
 </div>
 
-</section>
+<iframe src="https://www.google.com/maps?q=4304+S+Mingo+Rd+Tulsa+OK&output=embed"></iframe>
 
-<section>
-  <iframe src="https://www.google.com/maps?q=4304+S+Mingo+Rd+Tulsa+OK&output=embed"></iframe>
-</section>
+</div>
 
 <section class="cta">
-  <h2>Need a Plumber Right Now?</h2>
-  <p>Call anytime. We’re open 24 hours.</p>
+  <h2>Need Help Right Now?</h2>
+  <p>Call anytime — open 24 hours</p>
   <a href="tel:15396667822" class="btn">(539) 666-7822</a>
 </section>
 
 <footer>
-  <p>Fast Commercial Plumbing</p>
-  <p>4304 S Mingo Rd #9850, Tulsa, OK</p>
+  Fast Commercial Plumbing • Tulsa, OK • (539) 666-7822
 </footer>
 
 </body>
