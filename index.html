@@ -3,111 +3,92 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fast Commercial Plumbing | Tulsa Emergency Plumber</title>
+<title>Fast Commercial Plumbing | Tulsa, OK</title>
 
 <style>
-body {
-margin: 0;
-font-family: 'Segoe UI', sans-serif;
-color: #222;
-}
+body { margin:0; font-family:Arial; color:#222; }
 
 /* NAV */
 nav {
-position: sticky;
-top: 0;
-background: white;
-padding: 15px 20px;
-display: flex;
-justify-content: space-between;
-box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-z-index: 1000;
+  display:flex;
+  justify-content:space-between;
+  padding:15px 25px;
+  background:white;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  position:sticky;
+  top:0;
 }
-
-.call-btn {
-background: #ff6b00;
-color: white;
-padding: 10px 18px;
-text-decoration: none;
-border-radius: 5px;
-font-weight: bold;
+.phone {
+  font-weight:bold;
+  color:#ff6b00;
 }
 
 /* HERO */
 .hero {
-background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
-color: white;
-padding: 100px 20px;
-text-align: center;
+  background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+  url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+  color:white;
+  text-align:center;
+  padding:100px 20px;
 }
-
-.hero h1 {
-font-size: 42px;
-}
-
-.hero p {
-font-size: 18px;
-margin: 15px 0;
-}
-
-/* BUTTON */
-.btn {
-background: #ff6b00;
-color: white;
-padding: 15px 25px;
-text-decoration: none;
-border-radius: 5px;
-display: inline-block;
-margin-top: 10px;
-}
+.hero h1 { font-size:42px; }
 
 /* SECTIONS */
-.section {
-padding: 60px 20px;
-max-width: 1100px;
-margin: auto;
-}
+.section { padding:60px 20px; max-width:1100px; margin:auto; }
 
 .grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-gap: 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
 }
 
 .card {
-background: #f5f5f5;
-padding: 20px;
-border-radius: 10px;
+  background:#f5f5f5;
+  padding:20px;
+  border-radius:10px;
 }
 
-/* TRUST BAR */
-.trust {
-background: #0a3d62;
-color: white;
-text-align: center;
-padding: 20px;
+/* REVIEWS */
+.review {
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
-/* FORM */
-form {
-background: #f9f9f9;
-padding: 25px;
-border-radius: 10px;
+.stars {
+  color:#f5a623;
+  margin-bottom:10px;
 }
 
-input, select {
-width: 100%;
-padding: 12px;
-margin: 10px 0;
+.name {
+  font-weight:bold;
+  margin-top:10px;
+}
+
+/* CTA */
+.cta {
+  background:#0a3d62;
+  color:white;
+  text-align:center;
+  padding:50px 20px;
+}
+
+.btn {
+  background:#ff6b00;
+  color:white;
+  padding:15px 25px;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:15px;
 }
 
 /* FOOTER */
 footer {
-background: #0a3d62;
-color: white;
-text-align: center;
-padding: 20px;
+  background:#0a3d62;
+  color:white;
+  text-align:center;
+  padding:20px;
 }
 </style>
 </head>
@@ -115,80 +96,96 @@ padding: 20px;
 <body>
 
 <nav>
-<strong>Fast Commercial Plumbing</strong>
-<a href="tel:1234567890" class="call-btn">📞 Call Now</a>
+  <strong>Fast Commercial Plumbing</strong>
+  <div class="phone">(918) 555-1234</div>
 </nav>
 
 <section class="hero">
-<h1>Fast, Reliable Plumbing — Same Day Service</h1>
-<p>4.8⭐ Rated • 90+ Reviews • Emergency Plumbing Available</p>
-<a href="#form" class="btn">Get Help Now</a>
-</section>
-
-<div class="trust">
-✔ Same-Day Service &nbsp;&nbsp; ✔ Honest Pricing &nbsp;&nbsp; ✔ Licensed Pros
-</div>
-
-<section class="section">
-<h2>Why Homeowners Trust Us</h2>
-<div class="grid">
-<div class="card">⚡ Arrive fast—even nights & weekends</div>
-<div class="card">💬 Clear communication, no confusion</div>
-<div class="card">💲 Fair, upfront pricing</div>
-<div class="card">🔧 Fix problems other plumbers can't</div>
-</div>
+  <h1>Fast, Reliable Plumbing in Tulsa</h1>
+  <p>4.8⭐ from 90+ Reviews • Same-Day Service Available</p>
+  <a href="tel:9185551234" class="btn">Call (918) 555-1234</a>
 </section>
 
 <section class="section">
-<h2>Our Services</h2>
-<div class="grid">
-<div class="card"><h3>Water Heaters</h3><p>Repair & install tank and tankless systems.</p></div>
-<div class="card"><h3>Sewer Lines</h3><p>Repairs, replacements & tough root issues.</p></div>
-<div class="card"><h3>Drain Cleaning</h3><p>Clear stubborn clogs fast.</p></div>
-<div class="card"><h3>Leak Repairs</h3><p>Fix hidden leaks & slab issues.</p></div>
-<div class="card"><h3>Emergency Plumbing</h3><p>Available when you need help most.</p></div>
-<div class="card"><h3>General Repairs</h3><p>Toilets, sinks, faucets & more.</p></div>
-</div>
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">Water Heater Repair & Installation</div>
+    <div class="card">Sewer Line Repair & Replacement</div>
+    <div class="card">Drain Cleaning & Clog Removal</div>
+    <div class="card">Leak Detection & Pipe Repair</div>
+    <div class="card">Emergency Plumbing</div>
+    <div class="card">Toilets, Sinks & Faucets</div>
+  </div>
 </section>
 
 <section class="section">
-<h2>Real Customer Experiences</h2>
+  <h2>Real Customer Reviews</h2>
 
-<p>⭐⭐⭐⭐⭐ “They showed up the same night when our pipe burst. Super honest and fast.”</p>
-<p>⭐⭐⭐⭐⭐ “Fixed a sewer issue other companies wouldn’t touch.”</p>
-<p>⭐⭐⭐⭐⭐ “Clear explanations, fair pricing, and great service.”</p>
+  <div class="grid">
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>"Our tankless water heater stopped working and they came out the same day. Super professional and explained everything clearly. Pricing was fair and the job was done fast."</p>
+      <div class="name">— Nancy Mullen</div>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>"Frank came out the same day and gave us a fair estimate. The work was done quickly and everything works perfectly now."</p>
+      <div class="name">— Zachary Baker</div>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>"We had a major sewer line issue and other companies wouldn't handle it. These guys took care of everything and did an amazing job."</p>
+      <div class="name">— Dana O’Neal</div>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>"Called late at night for a busted pipe and they showed up fast. Honest, knowledgeable, and very friendly."</p>
+      <div class="name">— S. Floyd</div>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>"Kitchen sink clog backed everything up. They got it fixed before the holiday weekend which saved us."</p>
+      <div class="name">— Tanner Curry</div>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>"Used them for multiple issues in our home. Always on time, always professional, and they explain everything."</p>
+      <div class="name">— L. Newman</div>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>"Had a leak at the valve and they scheduled us quickly. The repair was done perfectly."</p>
+      <div class="name">— Desiree Payne</div>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>"Septic system overflowed and they came out that same night. Incredible service."</p>
+      <div class="name">— S. Hatfield</div>
+    </div>
+
+  </div>
 
 </section>
 
-<section class="section" id="form">
-<h2>Request Service Now</h2>
-
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="tel" placeholder="Phone Number" required>
-
-<select>
-<option>Select Service</option>
-<option>Water Heater</option>
-<option>Drain Cleaning</option>
-<option>Sewer Repair</option>
-<option>Leak Repair</option>
-<option>Emergency</option>
-</select>
-
-<button class="btn">Get a Call Back</button>
-</form>
-</section>
-
-<section class="section">
-<h2>Need Help Fast?</h2>
-<p>Call now and get a plumber out today.</p>
-<a href="tel:1234567890" class="btn">📞 Call Now</a>
+<section class="cta">
+  <h2>Need a Plumber Today?</h2>
+  <p>Call now for fast, reliable service in Tulsa.</p>
+  <a href="tel:9185551234" class="btn">📞 (918) 555-1234</a>
 </section>
 
 <footer>
-<p>© 2026 Fast Commercial Plumbing • Tulsa, OK</p>
+  <p>Fast Commercial Plumbing • Tulsa, OK • (918) 555-1234</p>
 </footer>
 
 </body>
 </html>
+
+
